@@ -1,0 +1,11 @@
+.login_container{
+    height: 400px;
+    width: 400px;
+    position: relative;
+    transform: translate(-50%, -50%, 0 , 0);
+}
+
+.login_details{
+    display: flex;
+    flex-direction: column;
+}

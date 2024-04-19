@@ -1,9 +1,12 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import Document,{ Html, Head, Main, NextScript } from 'next/document'
 
-export default function Document() {
-  return (
+class MyDocument extends Document {
+  render(){return (
     <Html lang="en">
-      <Head />
+      <Head>
+        <link rel='preload' href='/fonts/Raleway-Italic-VariableFont_wght.ttf' as='font' crossOrigin='anonymous'></link>
+        <link rel='preload' href='/fonts/Raleway-VariableFont_wght.ttf' as='font' crossOrigin='anonymous'></link>
+      </Head>
       <body>
         <Main />
         <NextScript />
@@ -11,3 +14,5 @@ export default function Document() {
     </Html>
   )
 }
+}
+export default MyDocument

@@ -1,0 +1,39 @@
+.note_container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    margin: 20px;
+}
+
+.note_form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 100px;
+    justify-content: center;
+    align-items: right;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.note_description{
+    width: 400px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.note_input{
+    margin: 10px 0;
+    line-height: 1.6;
+}
+.note_input:focus{
+    outline: none;
+}
+.note_btn{
+    position: relative;
+    width: 100px;
+    height: 30px;
+    bottom: 5px;
+    right: -100px;
+    cursor: pointer;
+}
